@@ -8,7 +8,7 @@ import behance from "./icons/behance.svg";
 
 const Contacts = () => {
     return (
-        <div>
+        <div id="contacts">
             <h1 className="main-title">My contacts</h1>
             <div className="contacts">
                 <a href="mailto:evgeniisypchenko@gmail.com" className="contact">

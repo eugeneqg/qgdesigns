@@ -5,24 +5,26 @@ import "./header.sass";
 
 const Header = () => {
 
-    const aboutRef = useRef();
-    const portfolioRef = useRef();
-    const contactsRef = useRef();
-
     const click = (e) => {
         e.preventDefault();
-        console.log(e)
-        const anchor = document.querySelector('#about')
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        if (e.target.innerText === "About me") {
+            const anchor = document.querySelector('#about')
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        } else if (e.target.innerText === "Portfolio") {
+            const anchor = document.querySelector('#portfolio')
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        } else {
+            const anchor = document.querySelector('#contacts')
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
     }
     return (
         <header className="head-container">
             <img className="logo" src={logo} alt="logo"/>
             <div className="menu-links">
-                <a className="menu-link" href="/">Main</a>
-                <a onClick={click} className="menu-link" href="/about">About me</a>
-                <a onClick={click} className="menu-link" href="/portfolio">Portfolio</a>
-                <a className="menu-link" href="/contacts">Contacts</a>
+                <p onClick={click} className="menu-link">About me</p>
+                <p onClick={click} className="menu-link">Portfolio</p>
+                <p onClick={click} className="menu-link">Contacts</p>
             </div>
         </header>
     )

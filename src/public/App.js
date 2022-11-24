@@ -43,10 +43,10 @@ function App() {
       <Header/>
         <Main/>
         <div className='container'>
-        <About/>
-        <Portfolio/>
-        <Contacts/>
-      </div>
+          <About/>
+          <Portfolio/>
+          <Contacts/>
+        </div>
       <Footer/>
     </div>
   );
