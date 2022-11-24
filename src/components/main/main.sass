@@ -1,0 +1,69 @@
+.main-banner 
+    height: 90vh
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    position: relative
+
+.text-content
+    margin-left: 96px
+
+.caption 
+    font-family: 'Ubuntu'
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    margin-bottom: 8px
+
+    color: #281B19
+
+.banner-header
+    font-family: 'Unna', serif
+    font-weight: 700
+    font-size: 54px
+    margin: 0 0 4px 0
+
+    color: #281B19
+
+.banner-pic
+    position: absolute
+    right: 96px
+    top: 124px
+    z-index: 1
+
+.banner-pic2
+    position: absolute
+    right: 57px
+    top: 92px
+    z-index: -1
+    animation: spin 4s linear infinite alternate
+
+.banner-pic3
+    position: absolute
+    right: -4px
+    top: 28px
+    z-index: -2
+    animation: spin2 6s linear infinite alternate-reverse
+
+.subcaption 
+    font-family: 'Ubuntu'
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+
+    margin: 0
+
+    color: #9EBFC8
+    opacity: 0.8
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(26deg)
+
+@keyframes spin2
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(35deg)
