@@ -9,7 +9,7 @@ import behance from "./icons/behance.svg";
 const Contacts = () => {
     return (
         <div id="contacts">
-            <h1 className="main-title">My contacts</h1>
+            <h1 className="main-title">my contacts</h1>
             <div className="contacts">
                 <a href="mailto:evgeniisypchenko@gmail.com" className="contact">
                     <img className="icon" src={mail} alt="mail"/>
