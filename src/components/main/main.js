@@ -13,15 +13,15 @@ const Main = () => {
 
         setTimeout(() => {
             setIsShown(true);
-            document.querySelector(".banner-pic").classList.add("shown")
+            document.querySelector(".banner-pic").classList.add("shown");
         }, 200);
 
         setTimeout(() => {
-            document.querySelector(".banner-pic2").classList.add("shown")
+            document.querySelector(".banner-pic2").classList.add("shown");
         }, 600)
 
         setTimeout(() => {
-            document.querySelector(".banner-pic3").classList.add("shown")
+            document.querySelector(".banner-pic3").classList.add("shown");
         }, 1000)
 
     }, [isShown])
@@ -31,14 +31,11 @@ const Main = () => {
     return (
         <div className="head-container main-banner">
             <div className="text-content">
-                <p className="caption">Hi there,</p>
-                <h1 className="banner-header">I'm Eugene</h1>
-                <p className="subcaption">a.k.a. Eugene QG</p>
+                <p className="caption">HELLO I AM A</p>
+                <h1 className="banner-header">UI / UX <span className="color">DESIGNER</span> <span>&</span> 
+                    FRONTEND <span className="color">DEVELOPER</span></h1>
             </div>
             {picture}
-            {/* <img className="banner-pic" src={pic3} alt="pic1"></img>
-            <img className="banner-pic2" src={pic2} alt="pic2"></img>
-            <img className="banner-pic3" src={pic1} alt="pic3"></img> */}
         </div>
     )
 }

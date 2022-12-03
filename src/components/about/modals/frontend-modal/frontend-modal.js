@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from "react";
-import "./ui-modal.sass";
+import "./frontend-modal.sass";
 
-const UIModal = ({closeModal}) => {
+const Frontend = ({closeModal}) => {
 
     const modalRef = useRef();
 
@@ -20,63 +20,60 @@ const UIModal = ({closeModal}) => {
         window.addEventListener("mousedown", handler);
         return () => window.removeEventListener("mousedown", handler);
 
-    }, [])
+    }, []);
+    
     return (
         <div className="modal-back">
-            <div ref={modalRef} className="modal-ui container">
+            <div ref={modalRef} className="modal-front container">
             <img onClick={closeModal} className="close" src={process.env.PUBLIC_URL + "images/close.svg"} alt="close"/>
                 <div className="modal-content">
                     <div className="modal-title">
-                        <h1>UI <span>/</span> UX</h1>
-                        <h1>DESIGNER</h1>
+                        <h1>FRONTEND-DEVELOPER</h1>
                     </div>
                     <div className="skills-content">
                         <h2>MAIN SKILLS</h2>
                         <ul className="skills">
                             <li>
-                                <p>Figma</p>
+                                <p>JavaScript</p>
                                 <div className="skill">
-                                    <div className="figma"/>
+                                    <div className="js"/>
                                 </div>
                             </li>
                             <li>
-                                <p>Photoshop</p>
+                                <p>React</p>
                                 <div className="skill">
-                                    <div className="photoshop"/>
+                                    <div className="react"/>
                                 </div>
                             </li>
                             <li>
-                                <p>Illustrator</p>
+                                <p>HTML</p>
                                 <div className="skill">
-                                    <div className="illustrator"/>
+                                    <div className="html"/>
+                                </div>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                                <div className="skill">
+                                    <div className="css"/>
                                 </div>
                             </li>
                         </ul>
                         <h2><span>&</span>OTHER SKILLS</h2>
                         <div className="other-skills">
                             <div className="other-skill">
-                                <p>User Flow</p>
+                                <p>TypeScript</p>
                             </div>
                             <div className="other-skill">
-                                <p>Wireframing</p>
+                                <p>GIT</p>
                             </div>
                             <div className="other-skill">
-                                <p>Prototyping</p>
+                                <p>WebPack</p>
                             </div>
                             <div className="other-skill">
-                                <p>Sketch</p>
+                                <p>NPM</p>
                             </div>
                             <div className="other-skill">
-                                <p>CJM</p>
-                            </div>
-                            <div className="other-skill">
-                                <p>Principle</p>
-                            </div>
-                            <div className="other-skill">
-                                <p>Personas</p>
-                            </div>
-                            <div className="other-skill">
-                                <p>Miro</p>
+                                <p>JQuery</p>
                             </div>
                         </div>
                     </div>
@@ -86,6 +83,6 @@ const UIModal = ({closeModal}) => {
     )
 }
 
-export default UIModal;
+export default Frontend;
 
  
