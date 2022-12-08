@@ -1,51 +1,3 @@
-// *
-//   &:before, &:after     
-//      box-sizing: border-box
-
-// @media (min-width: 1200px)
-
-//     body
-//         margin: 0px
-//         font-family: 'Ubuntu', sans-serif
-//         color:#281B19
-//         width: 100%
-//         height: 100%
-//         display: flex
-//         justify-content: center
-
-
-//     .head-container
-//         margin: 0 150px
-//         display: flex
-//         max-width: 1140px
-
-//     .container
-//         margin: 0 246px
-//         min-width: 949px
-//         max-width: 949px
-
-
-//     .main-title
-//         position: relative 
-//         font-family: 'Lato', sans-serif
-//         font-style: normal
-//         font-weight: 700
-//         font-size: 24px
-
-//         margin: 0px 0px 32px 0px
-
-//         color: #000000
-
-//         &::after
-//             position: absolute
-//             content: ""
-//             width: 40px
-//             height: 4px
-//             background-color: #63A6B9
-//             bottom: -8px
-//             left: 0        
-
-
 *
   &:before, &:after     
      box-sizing: border-box
@@ -93,7 +45,7 @@
             bottom: -8px
             left: 0        
 
-@media (min-width: 768px) and (max-width: 1199px)
+@media (min-width: 768px) and (max-width: 1200px)
 
     body
         margin: 0px
@@ -105,7 +57,6 @@
 
     .head-container
         margin: 0 40px
-        display: flex
 
     .container
         min-width: 648px
@@ -118,6 +69,43 @@
         font-style: normal
         font-weight: 700
         font-size: 24px
+
+        margin: 0px 0px 32px 0px
+
+        color: #000000
+
+        &::after
+            position: absolute
+            content: ""
+            width: 40px
+            height: 4px
+            background-color: #63A6B9
+            bottom: -8px
+            left: 0 
+
+@media (max-width: 767px)
+
+    body
+        margin: 0px
+        font-family: 'Ubuntu', sans-serif
+        color:#281B19
+        width: 100%
+        height: 100%
+
+
+    .head-container
+        margin: 0 20px
+
+    .container
+        margin: 0 20px
+
+
+    .main-title
+        position: relative 
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
 
         margin: 0px 0px 32px 0px
 

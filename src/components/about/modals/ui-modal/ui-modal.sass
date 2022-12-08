@@ -1,147 +1,454 @@
-.modal-back
-    background-color: rgba(225, 225, 225, 0.7)
-    backdrop-filter: blur(20px)
-    width: 100%
-    height: 100vh
-    z-index: 999
-    position: fixed
+@media (min-width: 1200px)
+    .modal-back
+        background-color: rgba(225, 225, 225, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
 
-    display: flex
-    align-items: center
-    justify-content: center
-
-.modal-ui
-    width: 100%
-    height: 630px
-    background: #fff url("../../img/ui.png") no-repeat bottom left
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
-    position: relative
-    
-    .close 
-        position: absolute
-        top: 20px
-        right: 20px
-        cursor: pointer
-
-
-.modal-content 
-    margin: 80px
-    position: relative
-    display: flex
-
-.modal-title
-    width: 408px
-
-    h1
-        position: relative
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: 700
-        font-size: 28px
-        width: 232px
-        margin: 0
-
-        color: #000000
-
-    span
-        font-weight: 300
-
-    &::before
-        content: ""
-        position: absolute
-        width: 4px
-        height: 68px
-        background-color: #63A6B9
-        left: -12px
-
-.skills-content 
-    h2
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: 700
-        font-size: 24px
-        margin: 0px 0px 32px 0px
-
-    span
-        font-weight: 500
-
-.skills
-    padding: 0
-    margin-bottom: 40px
-
-    li
-        list-style-type: none
-        height: 23px
-        margin-bottom: 32px
         display: flex
         align-items: center
+        justify-content: center
+
+    .modal-ui
+        width: 100%
+        height: 630px
+        background: #fff url("../../img/ui.png") no-repeat bottom left
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        position: relative
+        
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+
+    .modal-content 
+        margin: 80px
+        position: relative
+        display: flex
+
+    .modal-title
+        width: 408px
+
+        h1
+            position: relative
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 28px
+            width: 232px
+            margin: 0
+
+            color: #000000
+
+        span
+            font-weight: 300
+
+        &::before
+            content: ""
+            position: absolute
+            width: 4px
+            height: 68px
+            background-color: #63A6B9
+            left: -12px
+
+    .skills-content 
+        h2
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            margin: 0px 0px 32px 0px
+
+        span
+            font-weight: 500
+
+    .skills
+        padding: 0
+        margin-bottom: 40px
+
+        li
+            list-style-type: none
+            height: 23px
+            margin-bottom: 32px
+            display: flex
+            align-items: center
+
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 500
+                width: 102px
+                margin-right: 20px
+                font-size: 20px
+
+                display: block
+
+    .skill
+        width: 240px
+        height: 8px
+        background-color: #E8E8E8
+        border-radius: 20px
+
+    .figma
+        width: 230px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: figma 1s 
+
+    .photoshop
+        width: 184px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: photoshop 1s 
+
+    .illustrator
+        width: 190px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: illustrator 1s 
+
+    .other-skills
+        width: 362px
+        display: flex
+        flex-wrap: wrap
+
+    .other-skill
+        padding: 10px 20px
+        border: 2px solid #63A6B9
+        border-radius: 40px
+        margin: 0px 12px 12px 0px
 
         p
-            font-family: 'Ubuntu'
+            margin: 0px
+
+        
+    @keyframes figma
+        0%
+            width: 0px
+        100%
+            width: 230px
+
+    @keyframes photoshop
+        0%
+            width: 0px
+        100%
+            width: 184px
+
+    @keyframes illustrator
+        0%
+            width: 0px
+        100%
+            width: 190px
+
+@media (min-width: 768px) and (max-width: 1200px)
+
+    .modal-back
+        background-color: rgba(225, 225, 225, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal-ui
+        height: 608px
+        background: #fff url("../../img/ui.png") no-repeat bottom left -100px
+        background-size: 400px
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        position: relative
+        
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+
+    .modal-content 
+        margin: 80px 40px
+        position: relative
+        display: flex
+        justify-content: space-between
+
+    .modal-title
+        width: 240px
+
+        h1
+            position: relative
+            font-family: 'Lato', sans-serif
             font-style: normal
+            font-weight: 700
+            font-size: 28px
+            width: 232px
+            margin: 0
+
+            color: #000000
+
+        span
+            font-weight: 300
+
+        &::before
+            content: ""
+            position: absolute
+            width: 4px
+            height: 68px
+            background-color: #63A6B9
+            left: -12px
+
+    .skills-content 
+        h2
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            margin: 0px 0px 32px 0px
+
+        span
             font-weight: 500
-            width: 102px
-            margin-right: 20px
+
+    .skills
+        padding: 0
+        margin-bottom: 40px
+
+        li
+            list-style-type: none
+            height: 23px
+            margin-bottom: 32px
+            display: flex
+            align-items: center
+
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 500
+                width: 102px
+                margin-right: 20px
+                font-size: 20px
+
+                display: block
+
+    .skill
+        width: 240px
+        height: 8px
+        background-color: #E8E8E8
+        border-radius: 20px
+
+    .figma
+        width: 230px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: figma 1s 
+
+    .photoshop
+        width: 184px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: photoshop 1s 
+
+    .illustrator
+        width: 190px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: illustrator 1s 
+
+    .other-skills
+        width: 362px
+        display: flex
+        flex-wrap: wrap
+
+    .other-skill
+        padding: 10px 20px
+        border: 2px solid #63A6B9
+        border-radius: 40px
+        margin: 0px 12px 12px 0px
+
+        p
+            margin: 0px
+
+        
+    @keyframes figma
+        0%
+            width: 0px
+        100%
+            width: 230px
+
+    @keyframes photoshop
+        0%
+            width: 0px
+        100%
+            width: 184px
+
+    @keyframes illustrator
+        0%
+            width: 0px
+        100%
+            width: 190px
+
+@media (max-width: 768px)
+
+    .modal-back
+        background-color: rgba(225, 225, 225, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal-ui
+        box-sizing: border-box
+        padding: 20px
+        width: 335px
+        height: 520px
+        background-color: #fff
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+
+    .modal-content 
+        position: relative
+
+    .modal-title
+
+        h1
+            position: relative
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
             font-size: 20px
+            width: 136px
+            margin: 0px 0px 40px 15px
 
-            display: block
+            color: #000000
 
-.skill
-    width: 240px
-    height: 8px
-    background-color: #E8E8E8
-    border-radius: 20px
+        span
+            font-weight: 300
 
-.figma
-    width: 230px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: figma 1s 
+        &::before
+            content: ""
+            position: absolute
+            width: 4px
+            height: 48px
+            background-color: #63A6B9
+            left: 0px
 
-.photoshop
-    width: 184px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: photoshop 1s 
+    .skills-content
+        width: 295px
 
-.illustrator
-    width: 190px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: illustrator 1s 
+        h2
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            margin: 0px 0px 20px 0px
+            color: #63A6B9
 
-.other-skills
-    width: 362px
-    display: flex
-    flex-wrap: wrap
+        span
+            font-weight: 500
 
-.other-skill
-    padding: 10px 20px
-    border: 2px solid #63A6B9
-    border-radius: 40px
-    margin: 0px 12px 12px 0px
+    .skills
+        padding: 0
+        margin-bottom: 40px
 
-    p
-        margin: 0px
+        li
+            list-style-type: none
+            height: 23px
+            margin-bottom: 20px
+            display: flex
+            align-items: center
 
-    
-@keyframes figma
-  0%
-    width: 0px
-  100%
-    width: 230px
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 500
+                width: 97px
+                margin-right: 20px
+                font-size: 16px
 
-@keyframes photoshop
-  0%
-    width: 0px
-  100%
-    width: 184px
+                display: block
 
-@keyframes illustrator
-  0%
-    width: 0px
-  100%
-    width: 190px
+    .skill
+        width: 178px
+        height: 6px
+        background-color: #E8E8E8
+        border-radius: 20px
+
+    .figma
+        width: 170px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: figma 1s 
+
+    .photoshop
+        width: 160px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: photoshop 1s 
+
+    .illustrator
+        width: 150px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: illustrator 1s 
+
+    .other-skills
+        width: 335px
+        display: flex
+        flex-wrap: wrap
+
+    .other-skill
+        padding: 10px 20px
+        border: 2px solid #63A6B9
+        border-radius: 40px
+        margin: 0px 12px 12px 0px
+
+        p
+            margin: 0px
+            font-size: 12px
+
+        
+    @keyframes figma
+        0%
+            width: 0px
+        100%
+            width: 170px
+
+    @keyframes photoshop
+        0%
+            width: 0px
+        100%
+            width: 160px
+
+    @keyframes illustrator
+        0%
+            width: 0px
+        100%
+            width: 150px

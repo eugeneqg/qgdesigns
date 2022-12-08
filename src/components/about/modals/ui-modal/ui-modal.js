@@ -27,8 +27,7 @@ const UIModal = ({closeModal}) => {
             <img onClick={closeModal} className="close" src={process.env.PUBLIC_URL + "images/close.svg"} alt="close"/>
                 <div className="modal-content">
                     <div className="modal-title">
-                        <h1>UI <span>/</span> UX</h1>
-                        <h1>DESIGNER</h1>
+                        <h1>UI <span>/</span> UX DESIGNER</h1>
                     </div>
                     <div className="skills-content">
                         <h2>MAIN SKILLS</h2>

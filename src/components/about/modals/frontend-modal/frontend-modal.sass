@@ -1,157 +1,483 @@
-.modal-back
-    background-color: rgba(225, 225, 225, 0.7)
-    backdrop-filter: blur(20px)
-    width: 100%
-    height: 100vh
-    z-index: 999
-    position: fixed
+@media (min-width: 1200px)
+    
+    .modal-back
+        background-color: rgba(225, 225, 225, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
 
-    display: flex
-    align-items: center
-    justify-content: center
-
-.modal-front
-    width: 100%
-    height: 630px
-    background: #fff url("../../img/js.png") no-repeat bottom left
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
-    position: relative
-
-    .close 
-        position: absolute
-        top: 20px
-        right: 20px
-        cursor: pointer
-
-.modal-content 
-    margin: 80px
-    position: relative
-    display: flex
-
-.modal-title
-    width: 408px
-
-    h1
-        position: relative
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: 700
-        font-size: 28px
-        width: 232px
-        margin: 0
-
-        color: #000000
-
-    &::before
-        content: ""
-        position: absolute
-        width: 4px
-        height: 68px
-        background-color: #63A6B9
-        left: -12px
-
-.skills-content 
-    h2
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: 700
-        font-size: 24px
-        margin: 0px 0px 32px 0px
-        color: #63A6B9
-
-    span
-        font-weight: 500
-
-.skills
-    padding: 0
-    margin-bottom: 40px
-
-    li
-        list-style-type: none
-        height: 23px
-        margin-bottom: 32px
         display: flex
         align-items: center
+        justify-content: center
+
+    .modal-front
+        width: 100%
+        height: 630px
+        background: #fff url("../../img/js.png") no-repeat bottom left
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        position: relative
+
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+    .modal-content 
+        margin: 80px
+        position: relative
+        display: flex
+
+    .modal-title
+        width: 408px
+
+        h1
+            position: relative
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 28px
+            width: 232px
+            margin: 0
+
+            color: #000000
+
+        &::before
+            content: ""
+            position: absolute
+            width: 4px
+            height: 68px
+            background-color: #63A6B9
+            left: -12px
+
+    .skills-content 
+        h2
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            margin: 0px 0px 32px 0px
+            color: #63A6B9
+
+        span
+            font-weight: 500
+
+    .skills
+        padding: 0
+        margin-bottom: 40px
+
+        li
+            list-style-type: none
+            height: 23px
+            margin-bottom: 32px
+            display: flex
+            align-items: center
+
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 500
+                width: 102px
+                margin-right: 20px
+                font-size: 20px
+
+                display: block
+
+    .skill
+        width: 240px
+        height: 8px
+        background-color: #E8E8E8
+        border-radius: 20px
+
+    .js
+        width: 230px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: js 1s 
+
+    .react
+        width: 220px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: react 1s 
+
+    .html
+        width: 230px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: html-anim 1s 
+
+    .css
+        width: 225px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: css 1s 
+
+    .other-skills
+        width: 362px
+        display: flex
+        flex-wrap: wrap
+
+    .other-skill
+        padding: 10px 20px
+        border: 2px solid #63A6B9
+        border-radius: 40px
+        margin: 0px 12px 12px 0px
 
         p
-            font-family: 'Ubuntu'
+            margin: 0px
+
+        
+    @keyframes js
+        0%
+            width: 0px
+        100%
+            width: 230px
+
+    @keyframes react
+        0%
+            width: 0px
+        100%
+            width: 220px
+
+    @keyframes html-anim
+        0%
+            width: 0px
+        100%
+            width: 230px
+
+    @keyframes css
+        0%
+            width: 0px
+        100%
+            width: 225px
+
+@media (min-width: 768px) and (max-width: 1200px)
+
+    .modal-back
+        background-color: rgba(225, 225, 225, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal-front
+        height: 608px
+        background: #fff url("../../img/js.png") no-repeat bottom left -100px
+        background-size: 400px
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        position: relative
+
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+    .modal-content 
+        margin: 80px 40px
+        position: relative
+        display: flex
+        justify-content: space-between
+
+    .modal-title
+        width: 240px
+
+        h1
+            position: relative
+            font-family: 'Lato', sans-serif
             font-style: normal
+            font-weight: 700
+            font-size: 28px
+            width: 232px
+            margin: 0
+
+            color: #000000
+
+        &::before
+            content: ""
+            position: absolute
+            width: 4px
+            height: 68px
+            background-color: #63A6B9
+            left: -12px
+
+    .skills-content 
+        h2
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            margin: 0px 0px 32px 0px
+            color: #63A6B9
+
+        span
             font-weight: 500
-            width: 102px
-            margin-right: 20px
+
+    .skills
+        padding: 0
+        margin-bottom: 40px
+
+        li
+            list-style-type: none
+            height: 23px
+            margin-bottom: 32px
+            display: flex
+            align-items: center
+
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 500
+                width: 102px
+                margin-right: 20px
+                font-size: 20px
+
+                display: block
+
+    .skill
+        width: 240px
+        height: 8px
+        background-color: #E8E8E8
+        border-radius: 20px
+
+    .js
+        width: 230px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: js 1s 
+
+    .react
+        width: 220px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: react 1s 
+
+    .html
+        width: 230px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: html-anim 1s 
+
+    .css
+        width: 225px
+        height: 8px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: css 1s 
+
+    .other-skills
+        width: 362px
+        display: flex
+        flex-wrap: wrap
+
+    .other-skill
+        padding: 10px 20px
+        border: 2px solid #63A6B9
+        border-radius: 40px
+        margin: 0px 12px 12px 0px
+
+        p
+            margin: 0px
+
+        
+    @keyframes js
+        0%
+            width: 0px
+        100%
+            width: 230px
+
+    @keyframes react
+        0%
+            width: 0px
+        100%
+            width: 220px
+
+    @keyframes html-anim
+        0%
+            width: 0px
+        100%
+            width: 230px
+
+    @keyframes css
+        0%
+            width: 0px
+        100%
+            width: 225px
+
+@media (max-width: 767px)
+
+    .modal-back
+        background-color: rgba(225, 225, 225, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal-front
+        box-sizing: border-box
+        padding: 20px
+        width: 335px
+        height: 520px
+        background-color: #fff
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+    .modal-content 
+        position: relative
+
+    .modal-title
+
+        h1
+            position: relative
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
             font-size: 20px
+            width: 56px
+            margin: 0px 0px 40px 15px
 
-            display: block
+            color: #000000
 
-.skill
-    width: 240px
-    height: 8px
-    background-color: #E8E8E8
-    border-radius: 20px
+        &::before
+            content: ""
+            position: absolute
+            width: 4px
+            height: 48px
+            background-color: #63A6B9
+            left: 0px
 
-.js
-    width: 230px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: js 1s 
+    .skills-content 
+        width: 295px
 
-.react
-    width: 220px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: react 1s 
+        h2
+            font-family: 'Lato', sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            margin: 0px 0px 20px 0px
+            color: #63A6B9
 
-.html
-    width: 230px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: html-anim 1s 
+        span
+            font-weight: 500
 
-.css
-    width: 225px
-    height: 8px
-    background-color: #63A6B9
-    border-radius: 20px
-    animation: css 1s 
+    .skills
+        padding: 0
+        margin-bottom: 40px
 
-.other-skills
-    width: 362px
-    display: flex
-    flex-wrap: wrap
+        li
+            list-style-type: none
+            height: 23px
+            margin-bottom: 20px
+            display: flex
+            align-items: center
 
-.other-skill
-    padding: 10px 20px
-    border: 2px solid #63A6B9
-    border-radius: 40px
-    margin: 0px 12px 12px 0px
+            p
+                font-family: 'Ubuntu'
+                font-style: normal
+                font-weight: 500
+                width: 97px
+                margin-right: 20px
+                font-size: 16px
 
-    p
-        margin: 0px
+                display: block
 
-    
-@keyframes js
-  0%
-    width: 0px
-  100%
-    width: 230px
+    .skill
+        width: 178px
+        height: 6px
+        background-color: #E8E8E8
+        border-radius: 20px
 
-@keyframes react
-  0%
-    width: 0px
-  100%
-    width: 220px
+    .js
+        width: 170px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: js 1s 
 
-@keyframes html-anim
-  0%
-    width: 0px
-  100%
-    width: 230px
+    .react
+        width: 162px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: react 1s 
 
-@keyframes css
-  0%
-    width: 0px
-  100%
-    width: 225px
+    .html
+        width: 172px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: html-anim 1s 
+
+    .css
+        width: 172px
+        height: 6px
+        background-color: #63A6B9
+        border-radius: 20px
+        animation: css 1s 
+
+    .other-skills
+        width: 335px
+        display: flex
+        flex-wrap: wrap
+
+    .other-skill
+        padding: 10px 20px
+        border: 2px solid #63A6B9
+        border-radius: 40px
+        margin: 0px 12px 12px 0px
+
+        p
+            margin: 0px
+            font-size: 12px
+
+        
+    @keyframes js
+        0%
+            width: 0px
+        100%
+            width: 170px
+
+    @keyframes react
+        0%
+            width: 0px
+        100%
+            width: 162px
+
+    @keyframes html-anim
+        0%
+            width: 0px
+        100%
+            width: 172px
+
+    @keyframes css
+        0%
+            width: 0px
+        100%
+            width: 172px

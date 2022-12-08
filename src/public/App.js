@@ -10,6 +10,7 @@ import Footer from '../components/footer/footer';
 import Frontend from '../components/about/modals/frontend-modal/frontend-modal';
 import UIModal from '../components/about/modals/ui-modal/ui-modal';
 import PortModal from '../components/portfolio/portfolio-modal/portfolio-modal';
+import MobileMenu from '../components/header/header-menu/header-menu';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   const [scrollTop, setScrollTop] = useState(0);
   const [isAboutOpen, setAboutOpen] = useState(false);
   const [isPortOpen, setPortOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenu] = useState(false);
   const [className, setClass] = useState("");
 
   const [data, setData] = useState([]);
@@ -38,11 +40,13 @@ function App() {
 
   const openModal = () => {
     setAboutOpen(true);
+    document.body.style.overflow = "none";
   }
 
   const closeModal = () => {
     setAboutOpen(false);
     setPortOpen(false);
+    setMobileMenu(false);
     document.body.style.overflow = "auto";
   }
 
@@ -71,17 +75,33 @@ function App() {
     setPortOpen(true);
   }
 
+  const clickOnLink = (e) => {
+    e.preventDefault();
+    if (e.target.innerText === "About me") {
+        const anchor = document.querySelector('#about')
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else if (e.target.innerText === "Portfolio") {
+        const anchor = document.querySelector('#portfolio')
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+        const anchor = document.querySelector('#contacts')
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+}
+
 
   const goToTopBtn = scrolling ? <button onClick={goToTop} id="fixedbtn"><img src={process.env.PUBLIC_URL + "images/arrow.svg"} alt="arrow"/></button> : null
   const frontModal = isAboutOpen ? onModalIsOpen(className) : null;
   const portModal = isPortOpen ? <PortModal closeModal={closeModal} data={data}/> : null;
+  const mobileMenu = isMobileMenuOpen ? <MobileMenu click={clickOnLink} closeModal={closeModal}/> : null
   
   return (
     <div className="App">
       {goToTopBtn}
       {frontModal}
       {portModal}
-      <Header/>
+      {mobileMenu}
+      <Header click={clickOnLink} isMobileMenuOpen={isMobileMenuOpen} openMobileMenu={setMobileMenu}/>
         <Main/>
         <div className='container'>
           <About setClass={setClass} openModal={openModal}/>

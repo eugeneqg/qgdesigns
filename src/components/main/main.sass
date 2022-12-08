@@ -94,11 +94,11 @@
             transform: rotate(35deg)
 
 
-@media (min-width: 768px) and (max-width: 1199px)
+@media (min-width: 768px) and (max-width: 1200px)
     
     .main-banner 
         min-height: 480px
-        // height: 90vh
+        max-width: 800px
         display: flex 
         align-items: center
         justify-content: space-between
@@ -159,6 +159,103 @@
         width: 419px
         right: -16px
         top: 51px
+        z-index: -2
+        animation: spin2 6s linear infinite alternate-reverse
+        opacity: 0
+        transition: all 4s 
+
+    .subcaption 
+        font-family: 'Ubuntu'
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+
+        margin: 0
+
+        color: #9EBFC8
+        opacity: 0.8
+
+    .shown 
+        opacity: 1
+
+    @keyframes spin
+        0%
+            transform: rotate(0deg)
+        100%
+            transform: rotate(26deg)
+
+    @keyframes spin2
+        0%
+            transform: rotate(0deg)
+        100%
+            transform: rotate(35deg)
+
+@media (max-width: 767px)
+
+    .main-banner 
+        min-height: 100vh
+        max-width: 800px
+        display: flex 
+        // flex-direction: column-reverse
+        align-items: center
+        justify-content: space-between
+        position: relative
+        overflow: hidden
+
+    .text-content
+        width: 320px
+        margin-top: 280px
+
+    .color
+        color: #63A6B9
+    .caption 
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        margin-bottom: 8px
+
+        color: #281B19
+
+    .banner-header
+        font-family: 'Lato', serif
+        font-weight: 700
+        font-size: 24px
+        margin: 0 0 4px 0
+
+        color: #281B19
+
+        span
+            display: inline-block
+            font-weight: 500
+
+    .banner-pic
+        position: absolute
+        width: 281px
+        right: 43px
+        top: 67px
+        z-index: 1
+        opacity: 0
+        transition: all 1s
+
+        &:hover
+            filter: drop-shadow(0px 20px 20px rgba(89, 137, 157, 0.4))
+
+    .banner-pic2
+        position: absolute
+        width: 281px
+        right: 24px
+        top: 52px
+        z-index: -1
+        animation: spin 4s linear infinite alternate
+        opacity: 0
+        transition: all 2s 
+
+    .banner-pic3
+        position: absolute
+        width: 340px
+        right: -5px
+        top: 20px
         z-index: -2
         animation: spin2 6s linear infinite alternate-reverse
         opacity: 0

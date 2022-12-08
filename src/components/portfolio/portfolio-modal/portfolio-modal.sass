@@ -1,88 +1,268 @@
-.modal-back
-    background-color: rgba(255, 255, 255, 0.7)
-    backdrop-filter: blur(20px)
-    width: 100%
-    height: 100vh
-    z-index: 999
-    position: fixed
+@media (min-width: 1200px)
+    
+    .modal-back
+        background-color: rgba(255, 255, 255, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
 
-    display: flex
-    align-items: center
-    justify-content: center
+        display: flex
+        align-items: center
+        justify-content: center
 
-.modal-front-port
-    box-sizing: border-box
-    width: 100%
-    height: 630px
-    background: #fff
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
-    display: flex
-    justify-content: space-between
+    .modal-front-port
+        box-sizing: border-box
+        width: 100%
+        height: 630px
+        background: #fff
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        display: flex
+        justify-content: space-between
 
-.port-content 
-    margin: 60px
-    position: relative
-    display: flex
-    justify-content: space-between
-    align-items: center
-    flex-wrap: wrap
+    .port-content 
+        margin: 60px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
 
-    .close 
-        position: absolute
-        top: 0px
-        right: 0px
-        cursor: pointer
+        .close 
+            position: absolute
+            top: 0px
+            right: 0px
+            cursor: pointer
 
-.port-modal-pic
-    width: 400px
-    height: 400px
+    .port-modal-pic
+        width: 400px
+        height: 400px
 
-.right
-    width: 400px
+    .right
+        width: 400px
 
-.left
-    display: flex
-    flex-wrap: wrap
-    width: 388px
-    margin-left: 40px
-    align-items: center
-
-    h1
-        font-family: 'Lato'
-        font-style: normal
-        font-weight: 700
-        font-size: 24px
-        line-height: 29px
-        margin-bottom: 20px
-        color: #63A6B9
-
-    p
-        font-family: "Ubuntu", sans-serif
-        font-weight: 400
-        font-size: 16px
-        line-height: 24px
-        display: block
+    .left
+        display: flex
+        flex-wrap: wrap
         width: 388px
-        margin: 0px 0px 40px 0px
+        margin-left: 40px
+        align-items: center
 
-    button
-        width: 176px
-        height: 48px
-        background-color: #63A6B9
-        border: none
-        font-family: 'Ubuntu'
-        font-style: normal
-        font-weight: 400
-        font-size: 16px
-        width: 176px
-        height: 48px
+        h1
+            font-family: 'Lato'
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 29px
+            margin-bottom: 20px
+            color: #63A6B9
 
-        color: #FFFFFF
-        text-decoration: none
+        p
+            font-family: "Ubuntu", sans-serif
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            display: block
+            width: 388px
+            margin: 0px 0px 40px 0px
 
-        cursor: pointer
+        button
+            width: 176px
+            height: 48px
+            background-color: #63A6B9
+            border: none
+            font-family: 'Ubuntu'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            width: 176px
+            height: 48px
 
-        transition: all 0.5s
+            color: #FFFFFF
+            text-decoration: none
 
-        &:hover
-            box-shadow: 0px 8px 20px rgba(12, 112, 140, 0.4)
+            cursor: pointer
+
+            transition: all 0.5s
+
+            &:hover
+                box-shadow: 0px 8px 20px rgba(12, 112, 140, 0.4)
+
+@media (min-width: 768px) and (max-width: 1200px)
+
+    .modal-back
+        background-color: rgba(255, 255, 255, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal-front-port
+        box-sizing: border-box
+        height: 400px
+        background: #fff
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        display: flex
+        justify-content: space-between
+
+    .port-content 
+        margin: 20px
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .close 
+            position: absolute
+            top: 0px
+            right: 0px
+            cursor: pointer
+
+    .port-modal-pic
+        width: 320px
+        height: 320px
+
+    .right
+        width: 320px
+
+    .left
+        display: flex
+        flex-wrap: wrap
+        width: 308px
+        margin-left: 20px
+        align-items: center
+
+        h1
+            font-family: 'Lato'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            margin-bottom: 20px
+            color: #63A6B9
+            width: 308px
+
+        p
+            font-family: "Ubuntu", sans-serif
+            font-weight: 400
+            font-size: 12px
+            line-height: 24px
+            display: block
+            width: 288px
+            margin: 0px 0px 40px 0px
+
+        button
+            width: 176px
+            height: 48px
+            background-color: #63A6B9
+            border: none
+            font-family: 'Ubuntu'
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            width: 160px
+            height: 40px
+
+            color: #FFFFFF
+            text-decoration: none
+
+            cursor: pointer
+
+            transition: all 0.5s
+
+            &:hover
+                box-shadow: 0px 8px 20px rgba(12, 112, 140, 0.4)
+
+@media (max-width: 768px)
+
+    .modal-back
+        background-color: rgba(255, 255, 255, 0.7)
+        backdrop-filter: blur(20px)
+        width: 100%
+        height: 100vh
+        z-index: 999
+        position: fixed
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .modal-front-port
+        box-sizing: border-box
+        background: #fff
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15)
+        display: flex
+        justify-content: space-between
+
+    .port-content 
+        box-sizing: border-box
+        width: 335px
+        padding: 20px
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+
+        .close 
+            position: absolute
+            top: 20px
+            right: 20px
+            cursor: pointer
+
+    .port-modal-pic
+        width: 295px
+        height: 295px
+
+    .right
+        width: 295px
+
+    .left
+        display: flex
+        flex-wrap: wrap
+        width: 295px
+        align-items: center
+
+        h1
+            font-family: 'Lato'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            margin-bottom: 20px
+            color: #63A6B9
+            width: 295px
+
+        p
+            font-family: "Ubuntu", sans-serif
+            font-weight: 400
+            font-size: 12px
+            line-height: 24px
+            display: block
+            width: 295px
+            margin: 0px 0px 20px 0px
+
+        button
+            width: 295px
+            height: 40px
+            background-color: #63A6B9
+            border: none
+            font-family: 'Ubuntu'
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            width: 295px
+            height: 40px
+
+            color: #FFFFFF
+            text-decoration: none
+
+            cursor: pointer
+
+            transition: all 0.5s
+
+            &:hover
+                box-shadow: 0px 8px 20px rgba(12, 112, 140, 0.4)

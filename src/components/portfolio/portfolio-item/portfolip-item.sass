@@ -1,15 +1,51 @@
-.box-container
-    width: 302px
-    height: 302px
-    position: relative
-    margin-bottom: 20px
-    filter: grayscale(1)
-    transition: all 0.5s
-    cursor: pointer
+@media (min-width: 1200px) 
+    .box-container
+        width: 302px
+        height: 302px
+        position: relative
+        margin-bottom: 20px
+        filter: grayscale(1)
+        transition: all 0.5s
+        cursor: pointer
 
-    &:hover
-        filter: grayscale(0)
+        &:hover
+            filter: grayscale(0)
 
-.port-pic 
-    width: 302px
-    height: 302px
+    .port-pic 
+        width: 302px
+        height: 302px
+
+@media (min-width: 768px) and (max-width: 1200px)
+    .box-container
+        width: 302px
+        height: 302px
+        position: relative
+        margin-bottom: 20px
+        filter: grayscale(1)
+        transition: all 0.5s
+        cursor: pointer
+
+        &:hover
+            filter: grayscale(0)
+
+    .port-pic 
+        width: 302px
+        height: 302px
+
+@media (max-width: 767px)
+
+    .box-container
+        width: 333px
+        height: 333px
+        position: relative
+        margin-bottom: 20px
+        filter: grayscale(1)
+        transition: all 0.5s
+        cursor: pointer
+
+        &:hover
+            filter: grayscale(0)
+
+    .port-pic 
+        width: 333px
+        height: 333px
