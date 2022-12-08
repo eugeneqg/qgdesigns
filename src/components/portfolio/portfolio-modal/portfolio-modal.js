@@ -30,9 +30,9 @@ const PortModal = ({data, closeModal}) => {
         <div className="modal-back">
             <div ref={modalRef} className="modal-front-port container">
                 <div className="port-content">
-                <img onClick={closeModal} className="close" src={process.env.PUBLIC_URL + "images/close.svg"} alt="close"/>
+                <img onClick={closeModal} className="close" src={process.env.PUBLIC_URL + "/images/close.svg"} alt="close"/>
                     <div className="right">
-                        <img className="port-modal-pic" src={data.pic}/>
+                        <img className="port-modal-pic" src={"." + data.pic}/>
                     </div>
                     <div className="left">
                         <h1>{data.title.toUpperCase()}</h1>

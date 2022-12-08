@@ -90,7 +90,7 @@ function App() {
 }
 
 
-  const goToTopBtn = scrolling ? <button onClick={goToTop} id="fixedbtn"><img src={process.env.PUBLIC_URL + "./images/arrow.svg"} alt="arrow"/></button> : null
+  const goToTopBtn = scrolling ? <button onClick={goToTop} id="fixedbtn"><img src={process.env.PUBLIC_URL + "/images/arrow.svg"} alt="arrow"/></button> : null
   const frontModal = isAboutOpen ? onModalIsOpen(className) : null;
   const portModal = isPortOpen ? <PortModal closeModal={closeModal} data={data}/> : null;
   const mobileMenu = isMobileMenuOpen ? <MobileMenu click={clickOnLink} closeModal={closeModal}/> : null
