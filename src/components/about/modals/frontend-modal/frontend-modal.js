@@ -25,7 +25,7 @@ const Frontend = ({closeModal}) => {
     return (
         <div className="modal-back">
             <div ref={modalRef} className="modal-front container">
-            <img onClick={closeModal} className="close" src={process.env.PUBLIC_URL + "images/close.svg"} alt="close"/>
+            <img onClick={closeModal} className="close" src={process.env.PUBLIC_URL + "./images/close.svg"} alt="close"/>
                 <div className="modal-content">
                     <div className="modal-title">
                         <h1>FRONTEND-DEVELOPER</h1>
