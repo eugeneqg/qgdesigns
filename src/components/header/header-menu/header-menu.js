@@ -10,7 +10,7 @@ const MobileMenu = ({openMobileMenu, closeModal, click}) => {
         <div className="mobile-back">
                     <div className="mobile-menu">
             <div className="mobile-links">
-            <img onClick={closeModal} className="close-modal" src={process.env.PUBLIC_URL + "./images/close.svg"} alt="close"/>
+            <img onClick={closeModal} className="close-modal" src={process.env.PUBLIC_URL + "/images/close.svg"} alt="close"/>
                     <p onClick={handler} className="menu-link">About me</p>
                     <p onClick={handler} className="menu-link">Portfolio</p>
                     <p onClick={handler} className="menu-link">Contacts</p>
