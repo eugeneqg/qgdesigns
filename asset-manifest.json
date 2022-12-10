@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/qgdesigns/static/css/main.82de1803.css",
-    "main.js": "/qgdesigns/static/js/main.c1c0379b.js",
+    "main.css": "/qgdesigns/static/css/main.c98396c9.css",
+    "main.js": "/qgdesigns/static/js/main.eb0f16bc.js",
     "static/media/22.png": "/qgdesigns/static/media/22.39ac49d086466446bf84.png",
     "static/media/11.png": "/qgdesigns/static/media/11.a3970faf69e70e5d3e83.png",
     "static/media/33.png": "/qgdesigns/static/media/33.d8b49568a358f522eb1d.png",
@@ -15,11 +15,11 @@
     "static/media/telegram.svg": "/qgdesigns/static/media/telegram.88e1a7b5b3eb28bbc6362eddf763a858.svg",
     "static/media/mail.svg": "/qgdesigns/static/media/mail.b3ce26b1706154b8f1ab87485b7d4b32.svg",
     "index.html": "/qgdesigns/index.html",
-    "main.82de1803.css.map": "/qgdesigns/static/css/main.82de1803.css.map",
-    "main.c1c0379b.js.map": "/qgdesigns/static/js/main.c1c0379b.js.map"
+    "main.c98396c9.css.map": "/qgdesigns/static/css/main.c98396c9.css.map",
+    "main.eb0f16bc.js.map": "/qgdesigns/static/js/main.eb0f16bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.82de1803.css",
-    "static/js/main.c1c0379b.js"
+    "static/css/main.c98396c9.css",
+    "static/js/main.eb0f16bc.js"
   ]
 }
