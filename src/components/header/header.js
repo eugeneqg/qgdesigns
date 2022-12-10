@@ -18,7 +18,7 @@ const Header = ({openMobileMenu, isMobileMenuOpen, click}) => {
     const showMenu = () => {
         if (isMobile) {
             return (
-                <img onClick={() => openMobileMenu(!isMobileMenuOpen)} src={process.env.PUBLIC_URL + "images/menu.svg"} alt="menu"></img>
+                <img onClick={() => openMobileMenu(!isMobileMenuOpen)} src={process.env.PUBLIC_URL + "/images/menu.svg"} alt="menu"></img>
             )
         } else {
             return (
@@ -30,20 +30,7 @@ const Header = ({openMobileMenu, isMobileMenuOpen, click}) => {
             )
         }
     }
-
-    // const click = (e) => {
-    //     e.preventDefault();
-    //     if (e.target.innerText === "About me") {
-    //         const anchor = document.querySelector('#about')
-    //         anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    //     } else if (e.target.innerText === "Portfolio") {
-    //         const anchor = document.querySelector('#portfolio')
-    //         anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    //     } else {
-    //         const anchor = document.querySelector('#contacts')
-    //         anchor.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    //     }
-    // }
+    
     return (
         <header className="head-container">
             <img className="logo" src={logo} alt="logo"/>

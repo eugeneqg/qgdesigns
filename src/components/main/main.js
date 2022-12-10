@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./main.sass";
 import Picture from "./picture";
-// import pic1 from "./img/11.png";
-// import pic2 from "./img/22.png";
-// import pic3 from "./img/33.png";
 
 const Main = () => {
 

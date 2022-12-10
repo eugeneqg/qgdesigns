@@ -1,6 +1,5 @@
 import './App.sass';
 import React, { useState, useEffect } from 'react';
-import { useSelector } from "react-redux";
 import Header from '../components/header/header';
 import Main from '../components/main/main';
 import About from '../components/about/about';
@@ -101,13 +100,15 @@ function App() {
       {frontModal}
       {portModal}
       {mobileMenu}
-      <Header click={clickOnLink} isMobileMenuOpen={isMobileMenuOpen} openMobileMenu={setMobileMenu}/>
+      <div className='margins'>
+        <Header click={clickOnLink} isMobileMenuOpen={isMobileMenuOpen} openMobileMenu={setMobileMenu}/>
         <Main/>
         <div className='container'>
           <About setClass={setClass} openModal={openModal}/>
           <Portfolio getData={getData}/>
           <Contacts/>
         </div>
+      </div>
       <Footer/>
     </div>
   );

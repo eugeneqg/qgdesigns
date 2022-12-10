@@ -8,9 +8,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const Picture = () => {
     return (
         <>
-            <LazyLoadImage className="banner-pic" src={pic3} alt="pic1"/>
-            <LazyLoadImage className="banner-pic2" src={pic2} alt="pic2"/>
-            <LazyLoadImage className="banner-pic3" src={pic1} alt="pic3"/>
+            <LazyLoadImage effect="opacity" className="banner-pic" src={pic3} alt="pic1"/>
+            <LazyLoadImage effect="opacity" className="banner-pic2" src={pic2} alt="pic2"/>
+            <LazyLoadImage effect="opacity" className="banner-pic3" src={pic1} alt="pic3"/>
         </>
     )
 } 
