@@ -1,5 +1,6 @@
 import React from "react";
 import "./portfolip-item.sass";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Item = ({pic, title, desc, link}) => {
 
@@ -15,7 +16,7 @@ const Item = ({pic, title, desc, link}) => {
 
     return (
         <div className="box-container">
-            <img className="port-pic" src={process.env.PUBLIC_URL + pic} alt=""/>
+            <LazyLoadImage className="port-pic" src={process.env.PUBLIC_URL + pic} alt=""/>
         </div>
     )
 }

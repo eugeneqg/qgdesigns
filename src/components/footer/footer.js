@@ -10,7 +10,6 @@ const Footer = () => {
                 <p>Eugene QG / Eugene Sypchenko</p>
                 <p>{year}</p>
             </div>
-
         </footer>
     )
 }
