@@ -2,7 +2,9 @@ import React from "react";
 import "./header-menu.sass";
 
 const MobileMenu = ({openMobileMenu, closeModal, click}) => {
+
     const handler = (e) => {
+
         click(e);
         closeModal();
     }
