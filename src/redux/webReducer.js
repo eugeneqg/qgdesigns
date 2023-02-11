@@ -21,7 +21,7 @@ const initialState = {
             title: `Weather'ly - a weather app`,
             desc: `A simple React-based app that allows you to plan your tasks and get access to them on any device you want.`,
             alt: "banking",
-            id: 2,
+            id: 3,
             link: "https://melodious-cupcake-a2d46f.netlify.app"
         }
     ]
