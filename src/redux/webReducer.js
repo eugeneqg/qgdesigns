@@ -15,6 +15,14 @@ const initialState = {
             alt: "banking",
             id: 2,
             link: "https://eugeneqg.github.io/to_do_app/"
+        },
+        {
+            pic: "/images/weather.png",
+            title: `Weather'ly - a weather app`,
+            desc: `A simple React-based app that allows you to plan your tasks and get access to them on any device you want.`,
+            alt: "banking",
+            id: 2,
+            link: "https://melodious-cupcake-a2d46f.netlify.app"
         }
     ]
 }
